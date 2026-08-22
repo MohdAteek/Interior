@@ -1,0 +1,89 @@
+<!-- Global Navigation Bar -->
+<app-header
+  (openFavorites)="isFavoritesDrawerOpen.set(true)"
+  (openConsultation)="isConsultationModalOpen.set(true)"
+  (selectCategory)="onCategorySelect($event)">
+</app-header>
+
+<main class="min-h-screen">
+  <!-- 1. Hero Section with Live Stats & Search -->
+  <app-hero
+    (selectCategory)="onCategorySelect($event)"
+    (searchEvent)="onSearchFromHero($event)"
+    (viewProject)="onViewProjectFromHero($event)">
+  </app-hero>
+
+  <!-- 2. Nine Categories Showcase Hub -->
+  <app-categories-showcase
+    (selectCategory)="onCategorySelect($event)">
+  </app-categories-showcase>
+
+  <!-- 3. Full Portfolio & Concept Gallery with Filters & Image Downloads -->
+  <app-gallery-hub
+    [categoryInput]="selectedCategory()">
+  </app-gallery-hub>
+
+  <!-- 4. Interactive 2D/3D Room Color & Material Visualizer -->
+  <app-room-visualizer></app-room-visualizer>
+
+  <!-- 5. Turnkey Cost & Budget Estimator with Quotation Export -->
+  <app-cost-estimator
+    (openConsultation)="isConsultationModalOpen.set(true)">
+  </app-cost-estimator>
+
+  <!-- 6. Before & After Spatial Transformation Slider -->
+  <app-before-after-slider></app-before-after-slider>
+
+  <!-- 7. 3-Step Style Diagnostic Quiz -->
+  <app-style-quiz></app-style-quiz>
+
+  <!-- 8. Interactive Moodboard Canvas Studio -->
+  <app-moodboard-studio></app-moodboard-studio>
+</main>
+
+<!-- Global Studio Footer -->
+<app-footer
+  (selectCategory)="onCategorySelect($event)">
+</app-footer>
+
+<!-- Saved Favorites Drawer (Slide-Over) -->
+<app-favorites-drawer
+  *ngIf="isFavoritesDrawerOpen()"
+  (close)="isFavoritesDrawerOpen.set(false)"
+  (openConsultation)="isFavoritesDrawerOpen.set(false); isConsultationModalOpen.set(true)">
+</app-favorites-drawer>
+
+<!-- Consultation Appointment Booking Modal -->
+<app-consultation-modal
+  *ngIf="isConsultationModalOpen()"
+  (close)="isConsultationModalOpen.set(false)">
+</app-consultation-modal>
+
+<!-- Toast Notifications Alert -->
+<app-toast-notification></app-toast-notification>
+
+<!-- Always-available contact actions -->
+<div class="floating-contact-actions" aria-label="Contact AURA Studio">
+  <a
+    [href]="'tel:' + contactNumber"
+    class="floating-contact-button floating-call-button"
+    [title]="'Call ' + contactNumber"
+    [attr.aria-label]="'Call AURA Studio at ' + contactNumber">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+    </svg>
+    <span>Call</span>
+  </a>
+  <a
+    [href]="whatsappUrl"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="floating-contact-button floating-whatsapp-button"
+    title="Chat with AURA Studio on WhatsApp"
+    aria-label="Chat with AURA Studio on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20.52 3.48A11.84 11.84 0 0012.08 0C5.53 0 .2 5.33.2 11.88c0 2.09.55 4.13 1.59 5.92L.1 24l6.34-1.66a11.86 11.86 0 005.64 1.43h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.18-1.24-6.16-3.45-8.41zM12.09 21.77h-.01a9.85 9.85 0 01-5.02-1.38l-.36-.21-3.76.99 1-3.67-.23-.38a9.87 9.87 0 01-1.51-5.24C2.2 6.98 6.63 2.55 12.08 2.55c2.64 0 5.12 1.03 6.99 2.91a9.82 9.82 0 012.9 7c0 5.45-4.43 9.88-9.88 9.88zm5.42-7.4c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-1.77-.89-2.93-1.58-4.1-3.58-.31-.54.31-.5.89-1.67.1-.2.05-.37-.03-.52-.08-.15-.68-1.64-.93-2.25-.25-.59-.5-.51-.68-.52h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.09 4.49 1.89.82 2.63.89 3.57.75.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"></path>
+    </svg>
+    <span>WhatsApp</span>
+  </a>
+</div>

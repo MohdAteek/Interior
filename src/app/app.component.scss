@@ -1,0 +1,71 @@
+.floating-contact-actions {
+	position: fixed;
+	right: 1.25rem;
+	bottom: 1.25rem;
+	z-index: 40;
+	display: flex;
+	flex-direction: column;
+	gap: 0.625rem;
+}
+
+.floating-contact-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	min-width: 7.75rem;
+	min-height: 2.875rem;
+	padding: 0.625rem 0.875rem;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 9999px;
+	color: #ffffff;
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-decoration: none;
+	box-shadow: 0 8px 20px rgba(18, 19, 22, 0.2);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-contact-button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 12px 24px rgba(18, 19, 22, 0.28);
+}
+
+.floating-contact-button svg {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.floating-call-button {
+	background: #1f2937;
+}
+
+.floating-whatsapp-button {
+	background: #16a34a;
+}
+
+@media (max-width: 640px) {
+	.floating-contact-actions {
+		right: 0.75rem;
+		bottom: 0.75rem;
+	}
+
+	.floating-contact-button {
+		min-width: 0;
+		width: 3rem;
+		height: 3rem;
+		padding: 0;
+		justify-content: center;
+	}
+
+	.floating-contact-button span {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+}
