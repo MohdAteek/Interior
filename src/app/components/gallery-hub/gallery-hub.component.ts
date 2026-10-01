@@ -502,7 +502,7 @@ export class GalleryHubComponent {
   }
 
   async downloadImage(project: DesignProject): Promise<void> {
-    const filename = `Aura_${project.category}_${project.title.replace(/[^a-zA-Z0-9_-]/g, '_')}.jpg`;
+    const filename = `JS_${project.category}_${project.title.replace(/[^a-zA-Z0-9_-]/g, '_')}.jpg`;
     await this.downloadService.downloadImage(project.image, filename);
   }
 

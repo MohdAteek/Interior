@@ -281,7 +281,7 @@ export class RoomVisualizerComponent {
   }
 
   async downloadSnapshot(): Promise<void> {
-    const filename = `Aura_Visualizer_${this.activeRoom().id}_${this.selectedWallColor().name.replace(/\s+/g, '_')}_${this.selectedFlooring().name.replace(/\s+/g, '_')}.jpg`;
+    const filename = `JS_Visualizer_${this.activeRoom().id}_${this.selectedWallColor().name.replace(/\s+/g, '_')}_${this.selectedFlooring().name.replace(/\s+/g, '_')}.jpg`;
 
     // Render composite on HTML5 Canvas
     const canvas = document.createElement('canvas');
@@ -320,7 +320,7 @@ export class RoomVisualizerComponent {
 
       ctx.fillStyle = '#ffffff';
       ctx.font = 'bold 24px sans-serif';
-      ctx.fillText(`AURA INTERIORS STUDIO — ${this.activeRoom().name.toUpperCase()}`, 40, 1048);
+      ctx.fillText(`JS ENTERPRICES STUDIO — ${this.activeRoom().name.toUpperCase()}`, 40, 1048);
 
       ctx.fillStyle = '#C5A880';
       ctx.font = '18px monospace';

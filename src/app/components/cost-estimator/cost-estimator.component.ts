@@ -318,11 +318,11 @@ export class CostEstimatorComponent {
     const cat = this.interiorService.getCategoryById(this.selectedCategory);
     const categoryName = cat ? cat.name : this.selectedCategory;
     const dateStr = new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
-    const quoteId = 'AURA-SPEC-' + Math.floor(100000 + Math.random() * 900000);
+    const quoteId = 'JS-SPEC-' + Math.floor(100000 + Math.random() * 900000);
 
     const quoteContent = `
 ================================================================================
-          AURA INTERIORS STUDIO — PROJECT SPECIFICATION & SCOPE OF WORK
+          JS ENTERPRICES STUDIO — PROJECT SPECIFICATION & SCOPE OF WORK
 ================================================================================
 Project Reference : ${quoteId}
 Issue Date        : ${dateStr}
@@ -357,7 +357,7 @@ EXECUTION STANDARDS & SITE PROTOCOLS:
 - Zero-gap precision CNC cutting and edge-banding with PUR adhesives.
 - Anti-termite & anti-fungal treatment on all structural framing.
 - Complete on-site supervision by licensed architectural project managers.
-- Book an on-site consultation at https://aurainteriors.in or call 1800-928-AURA.
+- Book an on-site consultation at https://jsenterprices.in or call +91 8076224170.
 ================================================================================
 `;
 

@@ -272,7 +272,7 @@ export class ConsultationModalComponent {
     }
 
     const booking: ConsultationRequest = {
-      id: 'AURA-BK-' + Math.floor(100000 + Math.random() * 900000),
+      id: 'JS-BK-' + Math.floor(100000 + Math.random() * 900000),
       name: this.formData.name,
       email: this.formData.email,
       phone: this.formData.phone,
@@ -296,7 +296,7 @@ export class ConsultationModalComponent {
 
     const receiptContent = `
 ================================================================================
-           AURA INTERIORS STUDIO — CONSULTATION BOOKING CONFIRMATION
+           JS ENTERPRICES STUDIO — CONSULTATION BOOKING CONFIRMATION
 ================================================================================
 Appointment Ref    : ${b.id}
 Client Name        : ${b.name}
@@ -313,10 +313,10 @@ ${b.projectScopeNotes || 'No specific notes provided.'}
 
 ================================================================================
 STUDIO CONTACT:
-AURA INTERIORS ARCHITECTURAL STUDIO
+JS ENTERPRICES ARCHITECTURAL STUDIO
 Experience Studios: Mumbai • Delhi NCR • Bengaluru • Hyderabad • Pune • Chennai
-Toll-Free Concierge: 1800-928-AURA (98200 12345)
-Website: https://aurainteriors.in
+Direct Concierge: +91 8076224170
+Website: https://jsenterprices.in
 ================================================================================
 `;
 

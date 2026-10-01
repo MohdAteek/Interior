@@ -55,7 +55,7 @@ export class DownloadService {
               // Add subtle watermark
               ctx.fillStyle = 'rgba(255, 255, 255, 0.75)';
               ctx.font = 'bold 24px sans-serif';
-              ctx.fillText('AURA INTERIORS', 32, canvas.height - 32);
+              ctx.fillText('JS ENTERPRICES', 32, canvas.height - 32);
             }
             try {
               const dataUrl = canvas.toDataURL('image/jpeg', 0.95);

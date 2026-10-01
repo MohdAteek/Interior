@@ -5,10 +5,10 @@ import { ConsultationRequest, MoodboardCanvasItem } from '../models/interior.mod
   providedIn: 'root'
 })
 export class StorageService {
-  private readonly FAVORITES_KEY = 'aura_interior_favorites';
-  private readonly BOOKINGS_KEY = 'aura_interior_bookings';
-  private readonly THEME_KEY = 'aura_interior_theme';
-  private readonly MOODBOARD_KEY = 'aura_interior_moodboard';
+  private readonly FAVORITES_KEY = 'js_enterprices_favorites';
+  private readonly BOOKINGS_KEY = 'js_enterprices_bookings';
+  private readonly THEME_KEY = 'js_enterprices_theme';
+  private readonly MOODBOARD_KEY = 'js_enterprices_moodboard';
 
   favorites = signal<string[]>(this.loadFavorites());
   theme = signal<'light' | 'dark'>(this.loadTheme());

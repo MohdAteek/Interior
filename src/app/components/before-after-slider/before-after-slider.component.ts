@@ -217,7 +217,7 @@ export class BeforeAfterSliderComponent {
 
   async downloadAfterImage(): Promise<void> {
     const item = this.currentPair;
-    const filename = `Aura_Transformation_${item.title.replace(/[^a-zA-Z0-9_-]/g, '_')}_Completed.jpg`;
+    const filename = `JS_Transformation_${item.title.replace(/[^a-zA-Z0-9_-]/g, '_')}_Completed.jpg`;
     await this.downloadService.downloadImage(item.afterImg, filename);
   }
 }

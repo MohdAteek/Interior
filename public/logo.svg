@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 90" width="380" height="90">
+  <defs>
+    <linearGradient id="logoGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9E8CF"/>
+      <stop offset="35%" stop-color="#E2C79F"/>
+      <stop offset="70%" stop-color="#C5A880"/>
+      <stop offset="100%" stop-color="#9E7C4B"/>
+    </linearGradient>
+    <linearGradient id="logoBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2026"/>
+      <stop offset="100%" stop-color="#0E0F12"/>
+    </linearGradient>
+    <filter id="logoShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.4"/>
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#C5A880" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Left: Monogram Crest Mark (70x70) -->
+  <g transform="translate(10, 10)">
+    <!-- Base Plaque -->
+    <rect width="70" height="70" rx="18" fill="url(#logoBgGrad)" filter="url(#logoShadow)"/>
+    <rect x="2" y="2" width="66" height="66" rx="16" fill="none" stroke="url(#logoGoldGrad)" stroke-width="1.2" stroke-opacity="0.75"/>
+    <rect x="5.5" y="5.5" width="59" height="59" rx="13" fill="none" stroke="url(#logoGoldGrad)" stroke-width="0.5" stroke-dasharray="2 2" stroke-opacity="0.45"/>
+
+    <!-- Monogram JS -->
+    <g fill="url(#logoGoldGrad)">
+      <!-- J -->
+      <path d="M 25 20 L 36 20 L 36 23.5 L 32 23.5 L 32 41 C 32 45.5 29.5 49 24.5 49 C 20.8 49 18 46.8 17.2 43.8 L 21 42.4 C 21.6 44.2 23 45.6 24.6 45.6 C 26.8 45.6 28.5 44 28.5 40.8 L 28.5 23.5 L 25 23.5 Z"/>
+      
+      <!-- S -->
+      <path d="M 48.5 27.5 L 45.2 29.2 C 44.4 26.8 42.6 25.5 40 25.5 C 37.2 25.5 35.2 27 35.2 29.2 C 35.2 31.2 36.8 32.3 40.2 33.4 C 45.4 35.1 48.8 37 48.8 41.8 C 48.8 46.8 44.8 49.6 39.5 49.6 C 34.6 49.6 31.5 47 30.4 43.4 L 33.8 41.8 C 34.6 44.4 36.6 46.2 39.5 46.2 C 42.5 46.2 45 44.5 45 41.8 C 45 39.3 43.2 38.2 39.6 36.9 C 34.8 35.1 31.6 33.4 31.6 29 C 31.6 24.5 35.2 22 39.9 22 C 43.9 22 47.3 24.3 48.5 27.5 Z"/>
+
+      <!-- Diamond Accent -->
+      <polygon points="51,16 53.5,18.5 51,21 48.5,18.5"/>
+    </g>
+  </g>
+
+  <!-- Right: Brand Typography -->
+  <g transform="translate(96, 18)">
+    <!-- Primary Brand Name: JS ENTERPRICES -->
+    <text x="0" y="30" font-family="'Playfair Display', Georgia, serif" font-size="27" font-weight="700" letter-spacing="0.04em" fill="currentColor">
+      JS ENTERPRICES
+    </text>
+
+    <!-- Subtitle: ARCHITECTURAL INTERIORS -->
+    <text x="1" y="47" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="0.32em" fill="#C5A880">
+      ARCHITECTURAL INTERIORS
+    </text>
+
+    <!-- Decorative Line -->
+    <line x1="1" y1="55" x2="260" y2="55" stroke="url(#logoGoldGrad)" stroke-width="0.8" stroke-opacity="0.5"/>
+  </g>
+</svg>

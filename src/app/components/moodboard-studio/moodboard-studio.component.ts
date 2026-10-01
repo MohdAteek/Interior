@@ -264,7 +264,7 @@ export class MoodboardStudioComponent {
     // 2. Header
     ctx.fillStyle = '#121316';
     ctx.font = 'bold 36px serif';
-    ctx.fillText('AURA INTERIORS STUDIO — CURATED MOODBOARD', 60, 90);
+    ctx.fillText('JS ENTERPRICES STUDIO — CURATED MOODBOARD', 60, 90);
 
     ctx.fillStyle = '#C5A880';
     ctx.font = '20px sans-serif';
@@ -287,12 +287,12 @@ export class MoodboardStudioComponent {
       ctx.fillRect(0, 1020, 1920, 60);
       ctx.fillStyle = '#ffffff';
       ctx.font = '16px monospace';
-      ctx.fillText('https://aurainteriors.design — Turnkey Architectural & Interior Studio', 60, 1055);
+      ctx.fillText('https://jsenterprices.in — Turnkey Architectural & Interior Studio', 60, 1055);
 
       const dataUrl = canvas.toDataURL('image/jpeg', 0.95);
       const a = document.createElement('a');
       a.href = dataUrl;
-      a.download = `Aura_Moodboard_Collection_${Date.now()}.jpg`;
+      a.download = `JS_Moodboard_Collection_${Date.now()}.jpg`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);

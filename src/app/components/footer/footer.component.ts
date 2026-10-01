@@ -18,12 +18,10 @@ import { RoomCategoryId } from '../../models/interior.models';
           
           <div class="lg:col-span-5 space-y-6">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-[var(--color-secondary)] text-[#121316] flex items-center justify-center font-serif text-xl font-bold">
-                A
-              </div>
+              <img src="js-logo.svg" alt="" aria-hidden="true" class="w-11 h-11 rounded-xl border border-[var(--border-gold)] shadow-md">
               <div>
                 <span class="font-serif text-2xl font-bold tracking-tight text-white block leading-none">
-                  AURA
+                  JS ENTERPRICES
                 </span>
                 <span class="text-[0.65rem] tracking-[0.25em] font-semibold text-amber-300 uppercase block mt-1">
                   INTERIORS STUDIO
@@ -37,7 +35,7 @@ import { RoomCategoryId } from '../../models/interior.models';
 
             <div class="text-xs font-mono text-zinc-500 space-y-1">
               <div>Experience Studios: Mumbai • Delhi NCR • Bengaluru • Hyderabad • Pune • Chennai</div>
-              <div>Inquiries: concierge&#64;aurainteriors.in | 1800-928-AURA</div>
+              <div>Inquiries: concierge&#64;jsenterprices.in | +91 8076224170</div>
             </div>
           </div>
 
@@ -140,7 +138,7 @@ import { RoomCategoryId } from '../../models/interior.models';
         <!-- Bottom Copyright Row -->
         <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-white/10 text-xs text-zinc-500">
           <div>
-            © {{ currentYear }} AURA INTERIORS STUDIO. All rights reserved. Architectural spatial design.
+            © {{ currentYear }} JS ENTERPRICES STUDIO. All rights reserved. Architectural spatial design.
           </div>
 
           <div class="flex items-center gap-6">

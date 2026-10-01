@@ -84,22 +84,17 @@ import { RoomCategoryId } from '../../models/interior.models';
           <!-- Left: Brand Identity & Logo -->
           <div class="flex items-center gap-8">
             <a href="#hero" class="flex items-center gap-3.5 group text-decoration-none">
-              <div class="relative w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-light)] text-white flex items-center justify-center font-serif text-xl font-bold shadow-lg ring-1 ring-[var(--border-gold)] group-hover:scale-105 transition-all duration-300">
-                <span class="bg-gradient-to-tr from-amber-200 via-[var(--color-secondary)] to-amber-100 bg-clip-text text-transparent">A</span>
-                <div class="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-[var(--color-secondary)] border-2 border-[var(--bg-surface)] flex items-center justify-center">
-                  <div class="w-1 h-1 rounded-full bg-white"></div>
-                </div>
-              </div>
+              <img src="js-logo.svg" alt="" aria-hidden="true" class="w-11 h-11 rounded-xl shadow-lg ring-1 ring-[var(--border-gold)] group-hover:scale-105 transition-all duration-300">
               <div class="flex flex-col">
                 <div class="flex items-center gap-2">
-                  <span class="font-serif text-2xl font-bold tracking-tight text-[var(--text-main)] leading-none">
-                    AURA
+                  <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-[var(--text-main)] leading-none">
+                    JS ENTERPRICES
                   </span>
                   <span class="inline-block px-1.5 py-0.5 rounded text-[0.6rem] font-bold tracking-widest uppercase bg-[var(--color-secondary)]/15 text-[var(--color-secondary)] border border-[var(--color-secondary)]/30">
                     STUDIO
                   </span>
                 </div>
-                <span class="text-[0.65rem] tracking-[0.25em] font-semibold text-[var(--text-muted)] uppercase block mt-1">
+                <span class="text-[0.65rem] tracking-[0.2em] font-semibold text-[var(--text-muted)] uppercase block mt-1">
                   ARCHITECTURAL INTERIORS
                 </span>
               </div>
@@ -574,7 +569,7 @@ export class HeaderComponent {
   interiorService = inject(InteriorService);
 
   readonly contactNumber = '8076224170';
-  readonly whatsappUrl = 'https://wa.me/918076224170?text=' + encodeURIComponent('Hello AURA Studio, I would like to discuss my interior design requirements.');
+  readonly whatsappUrl = 'https://wa.me/918076224170?text=' + encodeURIComponent('Hello JS Enterprices, I would like to discuss my interior design requirements.');
 
   openFavorites = output<void>();
   openConsultation = output<void>();
