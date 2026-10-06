@@ -39,8 +39,8 @@ import { RoomCategoryId, DesignStyle } from './models/interior.models';
 })
 export class AppComponent {
   title = 'JS ENTERPRICES STUDIO';
-  readonly contactNumber = '8076224170';
-  readonly whatsappUrl = 'https://wa.me/918076224170?text=' + encodeURIComponent('Hello JS Enterprices, I would like to discuss my interior design requirements.');
+  readonly contactNumber = '9555131344';
+  readonly whatsappUrl = 'https://wa.me/919555131344?text=' + encodeURIComponent('Hello JS Enterprices, I would like to discuss my interior design requirements.');
 
   selectedCategory = signal<RoomCategoryId | 'all'>('all');
   isFavoritesDrawerOpen = signal<boolean>(false);

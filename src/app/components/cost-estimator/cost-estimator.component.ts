@@ -357,7 +357,7 @@ EXECUTION STANDARDS & SITE PROTOCOLS:
 - Zero-gap precision CNC cutting and edge-banding with PUR adhesives.
 - Anti-termite & anti-fungal treatment on all structural framing.
 - Complete on-site supervision by licensed architectural project managers.
-- Book an on-site consultation at https://jsenterprices.in or call +91 8076224170.
+- Book an on-site consultation at https://jsenterprices.in or call +91 9555131344.
 ================================================================================
 `;
 

@@ -315,7 +315,7 @@ ${b.projectScopeNotes || 'No specific notes provided.'}
 STUDIO CONTACT:
 JS ENTERPRICES ARCHITECTURAL STUDIO
 Experience Studios: Mumbai • Delhi NCR • Bengaluru • Hyderabad • Pune • Chennai
-Direct Concierge: +91 8076224170
+Direct Concierge: +91 9555131344
 Website: https://jsenterprices.in
 ================================================================================
 `;

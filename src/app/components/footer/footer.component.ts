@@ -35,7 +35,7 @@ import { RoomCategoryId } from '../../models/interior.models';
 
             <div class="text-xs font-mono text-zinc-500 space-y-1">
               <div>Experience Studios: Mumbai • Delhi NCR • Bengaluru • Hyderabad • Pune • Chennai</div>
-              <div>Inquiries: concierge&#64;jsenterprices.in | +91 8076224170</div>
+              <div>Inquiries: concierge&#64;jsenterprices.in | +91 9555131344</div>
             </div>
           </div>
 

@@ -568,8 +568,8 @@ export class HeaderComponent {
   storageService = inject(StorageService);
   interiorService = inject(InteriorService);
 
-  readonly contactNumber = '8076224170';
-  readonly whatsappUrl = 'https://wa.me/918076224170?text=' + encodeURIComponent('Hello JS Enterprices, I would like to discuss my interior design requirements.');
+  readonly contactNumber = '9555131344';
+  readonly whatsappUrl = 'https://wa.me/919555131344?text=' + encodeURIComponent('Hello JS Enterprices, I would like to discuss my interior design requirements.');
 
   openFavorites = output<void>();
   openConsultation = output<void>();
